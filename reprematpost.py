@@ -38,7 +38,7 @@ forematch = re.search(foreregex, text)
 print(forematch.group())
 
 # 44444444
-# regex pattern before the regex pattern
+# regex pattern after the regex pattern
 postregex: str = r"(?<=Rolph).+"
 # find the portion of the sentence after the regex pattern
 postmatch = re.search(postregex, text)
