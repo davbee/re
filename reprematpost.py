@@ -43,3 +43,8 @@ postregex: str = r"(?<=Rolph).+"
 # find the portion of the sentence after the regex pattern
 postmatch = re.search(postregex, text)
 print(postmatch.group())
+
+# split method is simpler than the fore and post re.search w/ regex
+mat = re.split("Rolph", text)
+print(mat)
+print(len(mat))
